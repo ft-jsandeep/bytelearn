@@ -8,14 +8,14 @@ const Navbar = () => {
   return (
     <nav className={styles["navbar-container"]}>
       <div className={styles["navbar-logo"]}>
-        <Link className={styles["navbar-logo-link"]} to="/">
+        <Link className={styles["navbar-logo-link"]} to="/bytelearn">
           ByteLearn
         </Link>
       </div>
       <div className={styles["navbar-categories__container"]}>
         <ul className={styles["navbar-categories"]}>
           <li className={styles["navbar-category"]}>
-            <Link className={styles["navbar-category-link"]} to="/">
+            <Link className={styles["navbar-category-link"]} to="/bytelearn">
               Home
             </Link>
           </li>

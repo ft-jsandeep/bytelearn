@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import allBlogs from "../seeds/blogs";
 import styles from "../assests/css/blogList.module.css";
 import { Link, useParams } from "react-router-dom";
+import { MdDelete, MdModeEdit } from "react-icons/md";
 
 const CategoryBlogs = () => {
   const { category } = useParams();
@@ -33,18 +34,19 @@ const CategoryBlogs = () => {
             >
               Continue Reading..
             </Link>
-            <div>
-              <button
+            <div className={styles["blog-control__container"]}>
+              <MdDelete
                 onClick={(e) => {
                   e.preventDefault();
                   setBlogs((items) =>
                     items.filter((item) => blog.id !== item.id)
                   );
                 }}
-              >
-                Delete
-              </button>
-              <Link to={`/edit/${blog.id}`}>Edit</Link>
+                className={styles["blog-control-delete"]}
+              />
+              <Link to={`/edit/${blog.id}`}>
+                <MdModeEdit className={styles["blog-control-edit"]} />
+              </Link>
             </div>
           </div>
         ))}
