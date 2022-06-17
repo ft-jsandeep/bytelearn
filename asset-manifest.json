@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bytelearn/static/css/main.b0e52dd3.css",
+    "main.js": "/bytelearn/static/js/main.c7276389.js",
+    "index.html": "/bytelearn/index.html",
+    "main.b0e52dd3.css.map": "/bytelearn/static/css/main.b0e52dd3.css.map",
+    "main.c7276389.js.map": "/bytelearn/static/js/main.c7276389.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0e52dd3.css",
+    "static/js/main.c7276389.js"
+  ]
+}
